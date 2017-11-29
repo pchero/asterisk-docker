@@ -34,12 +34,15 @@ RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-15-cur
 ## Asterisk compilation & installation
 WORKDIR /asterisk
 RUN ./configure
+RUN make menuselect.makeopts
 
 # enable opus codec module
 RUN menuselect/menuselect --enable codec_opus menuselect.makeopts
 
 # make & make install
-RUN make; make install; make samples
+RUN make
+RUN make install
+RUN make samples
 
 
 
