@@ -7,7 +7,9 @@ Also checkout my wiki article @ http://wiki.pchero21.com.
 You can pull the image from dockerhub.
 Which is as simple as running:
 
+<pre>
 $ docker pull pchero/asterisk
+</pre>
 
 Based on Debian 8 jessie base image
 Latest current available version of Asterisk 15
@@ -15,9 +17,10 @@ Latest current available version of Asterisk 15
 
 Available with docker pull pchero/asterisk
 
-Running it
+# Running it
 
-docker run \
+<pre>
+$ docker run \
   -d \
   -p 8080:8080/tcp \
   -p 8081:8081/tcp \
@@ -26,4 +29,4 @@ docker run \
   -p 10000-10500:10000-10500/udp \
   --name asterisk \
   -t pchero/asterisk
-
+</pre>
