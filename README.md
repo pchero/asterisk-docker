@@ -21,9 +21,9 @@ docker run \
   -d \
   -p 8080:8080/tcp \
   -p 8081:8081/tcp \
-  -p 5060:5060/tcp
-  -p 5060:5060/udp
-  -p 10000-10500:10000-10500/udp
-  --name $NAME_ASTERISK \
+  -p 5060:5060/tcp \
+  -p 5060:5060/udp \
+  -p 10000-10500:10000-10500/udp \
+  --name asterisk \
   -t pchero/asterisk
 
