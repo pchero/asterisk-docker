@@ -21,7 +21,9 @@ RUN apt-get install -y \
   less \
   libopus-dev \
   opus-tools \
-  xmlstarlet
+  xmlstarlet \
+  libsrtp0 \
+  libsrtp0-dev
 
 
 
