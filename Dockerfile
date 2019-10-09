@@ -30,7 +30,7 @@ RUN apt-get install -y \
 
 ## Download and decompress asterisk 16
 RUN mkdir /asterisk
-RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16.6.0.tar.gz | tar xz -C /asterisk --strip-components=1
+RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz | tar xz -C /asterisk --strip-components=1
 
 
 
