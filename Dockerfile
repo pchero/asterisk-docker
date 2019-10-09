@@ -23,7 +23,8 @@ RUN apt-get install -y \
   opus-tools \
   xmlstarlet \
   libsrtp0 \
-  libsrtp0-dev
+  libsrtp0-dev \
+  libedit-dev
 
 
 
