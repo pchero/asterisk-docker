@@ -27,15 +27,15 @@ RUN apt-get install -y \
 
 
 
-## Download and decompress asterisk 15
+## Download and decompress asterisk 16
 RUN mkdir /asterisk
-RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-15-current.tar.gz | tar xz -C /asterisk --strip-components=1
+RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz | tar xz -C /asterisk --strip-components=1
 
 
 
 ## Asterisk compilation & installation
 WORKDIR /asterisk
-RUN ./configure
+RUN ./configure --with-jansson-bundled
 RUN make menuselect.makeopts
 
 # enable opus codec module
