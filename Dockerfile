@@ -24,7 +24,9 @@ RUN apt-get install -y \
   xmlstarlet \
   libsrtp0 \
   libsrtp0-dev \
-  libedit-dev
+  libedit-dev \
+  sngrep \
+  sipp
 
 
 
